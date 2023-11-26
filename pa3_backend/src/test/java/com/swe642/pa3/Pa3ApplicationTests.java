@@ -1,4 +1,4 @@
-package com.project.pa.pa3;
+package com.swe642.pa3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -7,11 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class SurveyService {
 
-  private apiUrl = 'http://localhost:8080/addSurvey'; 
+  private apiUrlAdd = 'http://localhost:8080/addSurvey';
+  private apiUrlGet = 'http://localhost:8080/surveys'; 
 
   constructor(private http: HttpClient) { }
 
   submitSurvey(surveyData: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, surveyData);
+    return this.http.post<any>(this.apiUrlAdd, surveyData);
+  }
+  getSurveys(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrlGet);
   }
 }

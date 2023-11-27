@@ -8,7 +8,7 @@ describe('SurveyFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SurveyFormComponent]
+      declarations: [SurveyFormComponent]
     })
     .compileComponents();
     
